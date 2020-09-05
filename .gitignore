@@ -1,10 +1,9 @@
 # bytecode files
-./bin
+bin/
 
 #heap dump files
-./*.hprof
+*.hprof
 
-./.classpath
-./.project
-./.settings
-
+.classpath
+.project
+.settings/
