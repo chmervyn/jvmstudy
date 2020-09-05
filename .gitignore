@@ -1,0 +1,10 @@
+# bytecode files
+./bin
+
+#heap dump files
+./*.hprof
+
+./.classpath
+./.project
+./.settings
+
