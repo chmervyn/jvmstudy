@@ -14,7 +14,16 @@ public class MinorGC {
 		allocation4 = new byte[4 * _1MB];	//	出现一次Minor GC
 	}
 	
+	/*
+	 * -XX:PretenureSizeThreshold=3145728
+	 */
+	private static void testPretenureSizeThreshold() {
+		byte[] allocation;
+		allocation = new byte[4 * _1MB];	//	直接分配老年代
+	}
+	
 	public static void main(String[] args) {
-		testAllocation();
+		// testAllocation();
+		testPretenureSizeThreshold();
 	}
 }
